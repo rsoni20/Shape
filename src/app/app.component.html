@@ -1,0 +1,13 @@
+<div id="canvas" class="zone" (mouseenter)="showHotPoints()" (mouseleave)="hideHotPoints()" (dragover)="onDragOver($event)"
+  style="height:500px; width:500px; box-shadow: 10px 10px 5px #888888;">
+  <div>
+    <div class="point" #point1 id="point1" draggable="true" (dragstart)="onDragStart($event)"></div>
+    <div class="point" #point2 id="point2" draggable="true" (dragstart)="onDragStart($event)"></div>
+    <div class="point" #point3 id="point3" draggable="true" (dragstart)="onDragStart($event)"></div>
+    <div class="point" #point4 id="point4" draggable="true" (dragstart)="onDragStart($event)"></div>
+    <div class="line" #line1></div>
+    <div class="line" #line2></div>
+    <div class="line" #line3></div>
+    <div class="line" #line4></div>
+  </div>
+</div>
